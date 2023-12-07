@@ -1,3 +1,26 @@
+# ここにタイトルを入れる
+
+## 紹介と使い方
+
+  - nextjsを用いたブログ
+
+
+## 工夫した点
+
+  - SSGとSSRでの処理があるが、今回は比較的静的なものなので、SSGでの実装
+  - UI的なものはあんまり凝らしたものはないが、技術的に理解を深める内容
+
+## 苦戦した点
+
+  - FS, matterなどのサーバーサイドの関数を使ったことがなかったので、この辺を理解しておきたい。
+    
+
+## 参考にした web サイトなど
+
+  - https://qiita.com/tarotaro1129/items/135ef8d8ce4c1c08c9bb
+  - https://qiita.com/manabito76/items/fe91eefe11a74dcf5126
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
