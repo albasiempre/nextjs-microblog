@@ -9,7 +9,6 @@ import { getPostsData } from '../../lib/post';
 // 外部から一度だけデータを持ってくる
 export async function getStaticProps() {
   const allPostsData = getPostsData();
-  fs
   return {
     props: {
       allPostsData
@@ -24,16 +23,16 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <section className={utilStyle.headingMd}>
-        <p>I am a fullstack engineer who uses js and Larabel for that.</p>
+        <p>I am a fullstack engineer who uses js.</p>
       </section>
 
       <section>
       <h2>エンジニアのブログ</h2>
       <div className='styles.grid'>
-        {allPostsData.map(({id, title, date, thumbnails}) => (
+        {allPostsData.map(({id, title, date, thumbnail}) => (
           <article key={id}>
           <Link href={`/posts/${id}`}>
-          <img src={`${thumbnails}`} className='styles.thumbnailImage'/>
+          <img src={`${thumbnail}`} className='styles.thumbnailImage'/>
 
           </Link>
           <Link href={`/posts/${id}`}>
